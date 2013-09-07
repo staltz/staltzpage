@@ -1,0 +1,61 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body {
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: 'Lora', serif;
+}
+p {
+	font-size: 16px;
+}
+
+.header {
+	height: 300px;
+	background-image: url('../img/header_photo.jpg');
+	background-size: cover;
+	background-color: #254357;
+	background-position: bottom;
+}
+.avatar {
+	background-image: url('../img/andre.jpg');
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
+	position: relative;
+	top: -50px;
+	margin-bottom: -50px;
+	border: 2px solid white;
+	-webkit-border-radius: 50px;
+	        border-radius: 50px;
+	-webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+	        box-shadow: 0 0 6px 0 rgba(0,0,0,0.35);
+}
+.centered {
+	text-align: center;
+}
+.name-title {
+	color: #444;
+}
+.name-subtitle {
+	color: #999;
+	font-size: 18px;
+	font-family: 'Roboto Condensed';
+	margin-bottom: 40px;
+}
+.syllables {
+	font-family: 'Lora', serif;
+	font-style: italic;
+	font-size: 20px;
+	color: #555;
+	margin-right: 15px;
+}
+.silly-spacer {
+	height: 100px;
+}
