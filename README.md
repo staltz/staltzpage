@@ -1,6 +1,4 @@
-trollero
-========
+André Staltz portfolio page
+===========================
 
-Troll conversations by replying nonsense. 
-
-A webapp that generates nonsense text to be used in online discussions.
+Simple Flask webapp. Uses pyjade and Bootstrap 3.
