@@ -13,6 +13,10 @@ h1, h2, h3, h4 {
 p {
 	font-size: 16px;
 }
+a {
+	color: black;
+	text-decoration: underline;
+}
 
 .header {
 	height: 300px;
@@ -56,6 +60,100 @@ p {
 	color: #555;
 	margin-right: 15px;
 }
-.silly-spacer {
-	height: 100px;
+h2.hr {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #AAA;
+	line-height: 0.1em;
+	margin: 60px 0 30px;
+	font-size: 16px;
+	cursor: default;
+	-webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	   -khtml-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+}
+span.hr {
+	background-color: white;
+	padding: 0 10px;
+	font-family: 'Roboto Condensed';
+	color: #999;
+}
+ul.horizontal {
+	width: 340px;
+	display: table;
+	padding: 0;
+	margin: 0 auto;
+}
+ul.horizontal li {
+	display: table-cell;
+	text-align: center;
+}
+ul.horizontal li a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 39px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+ul.horizontal li a:hover, ul.horizontal li a:active {
+	text-decoration: none;
+}
+.twitter-bg {
+	background-color: #33CCFF;
+}
+.twitter-bg:hover {
+	border-bottom: 4px solid #27B5E4;
+}
+.facebook-bg {
+	background-color: #3B5998;
+}
+.facebook-bg:hover {
+	border-bottom: 4px solid #152D5F;
+}
+.linkedin-bg {
+	background-color: #0E76A8;
+}
+.linkedin-bg:hover {
+	border-bottom: 4px solid #004769;
+}
+.stackexchange-bg {
+	background-color: #EF8236;
+}
+.stackexchange-bg:hover {
+	border-bottom: 4px solid #BE5A14;
+}
+.github-bg {
+	background-color: #171515;
+}
+.github-bg:hover {
+	border-bottom: 4px solid #616161;
+}
+.email-bg {
+	background-color: #777;
+}
+.email-bg:hover {
+	border-bottom: 4px solid #444;
+}
+.footer {
+	margin-top: 80px;
+	background-color: #EEE;
+	text-align: center;
+	height: 140px;
+	border-top: 1px solid #DDD;
+	padding-top: 15px;
+	color: #888;
+}
+.footer a {
+	color: #888;
+}
+.footer p {
+	font-size: 14px;
+}
+span.dot {
+	margin: 0 5px;
 }
