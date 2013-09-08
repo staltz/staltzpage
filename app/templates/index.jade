@@ -10,9 +10,8 @@ html
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		title André Staltz
 		meta(name="description", content="Holistic Web Developer")
-		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		link(rel="stylesheet", href="/static/css/bootstrap.min.css")
-		//-link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css", rel="stylesheet")
 		link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css", rel="stylesheet")
 		link(href="/static/css/main.css", rel="stylesheet")
 		script(src="/static/js/modernizr-2.6.1.min.js")
@@ -22,20 +21,26 @@ html
 		.container
 			.row
 				div(class="col-lg-6 col-lg-offset-3")
-					h2.centered.name-title André Staltz
-					h3.centered.name-subtitle HOLISTIC WEB DEVELOPER
+					.centered
+						h2.name-title 
+							a(href="#name", id="link-name-title", class="name-title", 
+							data-toggle="tooltip", title="Real name?") 
+								| André Staltz
+						h3.name-subtitle HOLISTIC WEB DEVELOPER
 					p
-						| <span class="syllables">ho·lis·tic</span> Emphasizes the 
-						| importance of the whole and the interdependence of its parts.
+						span.syllables ho·lis·tic
+						| Emphasizes the importance of the whole 
+						| and the interdependence of its parts.
 					+section('about-me', "ABOUT ME")
 					p
 						| Hi, I'm a web developer and designer. My passion is 
 						| to make meaningful products out of my many wild ideas.
 					p
-						| I'm the founder of <a href="http://www.iroquote.com" target="_blank">Iroquote</a>,
-						| a platform for online discussion societies.
+						| I'm the founder of 
+						a(href="http://www.iroquote.com", target="_blank") Iroquote
+						|, a platform for online discussion societies.
 					p
-						| I come from Brazil, but have no interest for football
+						| I come from Brazil, but have no interest in football
 						| and many other things that identify them. I'm rare.
 						| Currently I live in Finland, where it's nice and cold.
 					+section('find-me', "FIND ME")
@@ -61,23 +66,48 @@ html
 					+section('extras', "EXTRAS")
 					p
 						| Sometimes I make games. With my friend Glauber Kotaki 
-						| I've made some under the label <a href="http://www.glauberkotaki.com/zeroduo" target="_blank">ZeroDuo</a>,
-						| and by myself I've made <a href="http://www.kongregate.com/games/STALTZ/rgblend" target="_blank">RGBlend</a>, 
-						| a color puzzle game. I've also had an important role in a
-						| community of brazilian game designers named <a href="http://www.iroquote.com/gamebrain" target="_blank">Gamebrain</a>.
+						| I've made some under the label 
+						a(href="http://www.glauberkotaki.com/zeroduo", target="_blank") ZeroDuo
+						|, and by myself I've made 
+						a(href="http://www.kongregate.com/games/STALTZ/rgblend", target="_blank") RGBlend
+						|, a color puzzle game. I've also had an important role in a
+						| community of brazilian game designers named 
+						a(href="http://www.iroquote.com/gamebrain", target="_blank") Gamebrain
+						|.
 					p 
-						| I'm MSc in Computer Science, for my <a href="http://users.ics.aalto.fi/desoua1/HAcid_Thesis.pdf" target="_blank">Master's Thesis</a>
-						| I developed <a href="https://bitbucket.org/staltz/hacid/wiki/Home" target="_blank">HAcid</a>,
-						| a Java client library that enables ACID transactions on <a href="http://hbase.apache.org/" target="_blank">HBase</a>.
+						| I'm MSc in Computer Science, and for my 
+						a(href="http://users.ics.aalto.fi/desoua1/HAcid_Thesis.pdf", target="_blank") Master's Thesis
+						|  I developed 
+						a(href="https://bitbucket.org/staltz/hacid/wiki/Home", target="_blank") HAcid
+						|, a Java client library that enables ACID transactions on 
+						a(href="http://hbase.apache.org/", target="_blank") HBase
+						|.
 					p
-						| I have a <a href="http://staltz.blogspot.com" target="_blank">blog</a>,
-						| where I occasionally write about programming and softwares.
+						| I have a 
+						a(href="http://staltz.blogspot.com", target="_blank") blog
+						|, where I occasionally write about programming and softwares.
+						| I also write at 
+						a(href="http://medium.com/@andrestaltz", target="_blank") Medium
+						|  about life.
 					p
 						| I'm an acoustic guitarrist and a composer. I listen to different
-						| genres, but mostly instrumental music. Check out my <a href="http://www.youtube.com/playlist?list=PL24A51E95B3F5E4D2" target="_blank">acoustic songs recorded on video</a>.
-						| In 2004-2006 recorded a progressive alternative rock/metal album called
-						| <a href="https://soundcloud.com/andrestaltz/sets/o-vazio-tem-um-nome" target="_blank"><em>O vazio tem um nome</em></a>.
-						| You can find other compositions at <a href="http://soundcloud.com/andrestaltz" target="_blank">Soundcloud</a>.
+						| genres, but mostly instrumental music. Check out my 
+						a(href="http://www.youtube.com/playlist?list=PL24A51E95B3F5E4D2", target="_blank") acoustic songs recorded on video
+						|. In 2004-2006 I recorded a progressive alternative rock/metal
+						| album called 
+						a(href="https://soundcloud.com/andrestaltz/sets/o-vazio-tem-um-nome", target="_blank")
+							em O vazio tem um nome
+						|.
+						| You can find other compositions at 
+						a(href="http://soundcloud.com/andrestaltz", target="_blank") Soundcloud
+						|.
+					+section('name', "MY NAME")
+					p
+						| <em>Staltz</em> is just a nickname I use on the web since 2004. My real
+						| name is <strong>André Medeiros</strong>, but I try to avoid it 
+						| because it's 
+						a(href="https://www.google.com/search?q=andré+medeiros", target="_blank") disappointingly unoriginal
+						|.
 		.footer
 			.container
 				.row
@@ -90,8 +120,10 @@ html
 							+dot
 							a(href="http://gunicorn.org/", target="_blank") gunicorn
 							+dot
-							a(href="https://github.com/SyrusAkbary/pyjade", target="_blank") pyjade
+							a(href="http://www.heroku.com", target="_blank") Heroku
 							br
+							a(href="https://github.com/SyrusAkbary/pyjade", target="_blank") pyjade
+							+dot
 							a(href="http://getbootstrap.com", target="_blank") Bootstrap 3
 							+dot
 							a(href="http://fontawesome.io", target="_blank") FontAwesome 3.2.1

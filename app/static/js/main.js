@@ -1,5 +1,4 @@
 (function() {
-	console.log(":D")
-
+	$("#link-name-title").tooltip({'placement': 'right'})
 }).call(this);
 	

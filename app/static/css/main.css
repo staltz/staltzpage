@@ -47,6 +47,17 @@ a {
 .name-title {
 	color: #444;
 }
+a.name-title {
+	display: inline;
+	text-decoration: none;
+	color: #444;
+}
+a.name-title:hover {
+	text-decoration: none;
+	color: #444;
+	border-bottom: 1px dashed #444;
+	cursor: help;
+}
 .name-subtitle {
 	color: #999;
 	font-size: 18px;
@@ -82,7 +93,8 @@ span.hr {
 	color: #999;
 }
 ul.horizontal {
-	width: 340px;
+	width: 100%;
+	max-width: 340px;
 	display: table;
 	padding: 0;
 	margin: 0 auto;
@@ -102,50 +114,33 @@ ul.horizontal li a {
 }
 ul.horizontal li a:hover, ul.horizontal li a:active {
 	text-decoration: none;
+	border-bottom: 4px solid rgba(0,0,0,0.3);
 }
 .twitter-bg {
 	background-color: #33CCFF;
 }
-.twitter-bg:hover {
-	border-bottom: 4px solid #27B5E4;
-}
 .facebook-bg {
 	background-color: #3B5998;
-}
-.facebook-bg:hover {
-	border-bottom: 4px solid #152D5F;
 }
 .linkedin-bg {
 	background-color: #0E76A8;
 }
-.linkedin-bg:hover {
-	border-bottom: 4px solid #004769;
-}
 .stackexchange-bg {
 	background-color: #EF8236;
-}
-.stackexchange-bg:hover {
-	border-bottom: 4px solid #BE5A14;
 }
 .github-bg {
 	background-color: #171515;
 }
-.github-bg:hover {
-	border-bottom: 4px solid #616161;
-}
 .email-bg {
-	background-color: #777;
-}
-.email-bg:hover {
-	border-bottom: 4px solid #444;
+	background-color: #888;
 }
 .footer {
-	margin-top: 80px;
+	margin-top: 60px;
 	background-color: #EEE;
 	text-align: center;
-	height: 140px;
 	border-top: 1px solid #DDD;
-	padding-top: 15px;
+	border-bottom: 1px solid #DDD;
+	padding: 30px 0;
 	color: #888;
 }
 .footer a {
