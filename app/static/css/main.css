@@ -75,7 +75,7 @@ h2.hr {
 	width: 100%;
 	text-align: center;
 	border-bottom: 1px solid #AAA;
-	line-height: 0.1em;
+	line-height: 0;
 	margin: 60px 0 30px;
 	font-size: 16px;
 	cursor: default;
